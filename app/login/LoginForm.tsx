@@ -1,6 +1,6 @@
 "use client"
 import { Button } from "@/components/ui/button"
-import { Field, FieldGroup, FieldLabel } from "@/components/ui/field"
+import { Field, FieldGroup, FieldLabel, FieldError } from "@/components/ui/field"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { signIn } from "next-auth/react"
@@ -51,7 +51,7 @@ export default function LoginForm() {
                                     type="password"
                                 />
                             </Field>
-                            {error && <p className="text-sm text-destructive">{error}</p>}
+                            <FieldError>{error}</FieldError>
                             <Field>
                                 <Button type="submit">Sign in</Button>
                             </Field>
