@@ -1,5 +1,5 @@
 import { auth } from "@/auth"
-import Signout from "@/components/ui/SignOutButton"
+import Signout from "@/components/SignOutButton"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 

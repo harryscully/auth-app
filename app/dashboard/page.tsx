@@ -2,7 +2,7 @@ import { auth } from "@/auth"
 import { redirect } from "next/navigation"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import Signout from "@/components/ui/SignOutButton"
+import Signout from "@/components/SignOutButton"
 
 export default async function Dashboard() {
     const session = await auth()
@@ -16,10 +16,9 @@ export default async function Dashboard() {
             <Signout />
             <div className="flex flex-col gap-4 grow items-center justify-center">
                 <h1 className="text-5xl font-mono font-black">Dashboard</h1>
-                {session?.user.role !== "VIEWER" && (
-                    <Button asChild>
-                        <Link href="/settings">Settings</Link>
-                    </Button>)}
+                <Button asChild>
+                    <Link href="/settings">Settings</Link>
+                </Button>
                 <Button asChild>
                     <Link href="/profile">Profile</Link>
                 </Button>
