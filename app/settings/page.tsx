@@ -2,7 +2,7 @@ import { auth } from "@/auth"
 import { redirect } from "next/navigation"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import Signout from "../../components/ui/SignOutButton"
+import Signout from "@/components/ui/SignOutButton"
 
 export default async function Settings() {
     const session = await auth()
