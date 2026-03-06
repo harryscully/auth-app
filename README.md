@@ -1,7 +1,7 @@
 # auth-app
 
 A learning project exploring authentication in Next.js. Built to understand 
-auth patterns before migrating HOPS CRM from Power Apps to a full-stack React app.
+auth patterns.
 
 🔗 [Live Demo](https://auth-app-seven-beryl.vercel.app)
 
