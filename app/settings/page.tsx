@@ -7,7 +7,7 @@ export default async function Settings() {
     if (!session) return <p>Not logged in!</p>
 
     if (session.user.role === "VIEWER") {
-        redirect("/login")
+        redirect("/unauthorised")
     }
 
     return (
