@@ -1,5 +1,5 @@
 import { auth } from "@/auth"
-import Signout from "./signout"
+import Signout from "../../components/ui/SignOutButton"
 
 export default async function Profile() {
     const session = await auth()
@@ -7,10 +7,11 @@ export default async function Profile() {
     if (!session) return <p>Not logged in!</p>
 
     return (
-        <>
-            <h1 className="text-4xl font-bold">Profile</h1>
-            <p>{session.user.name} {session.user.role}</p>
+        <div className="flex flex-col w-full min-h-svh p-4">
             <Signout />
-        </>
+            <div className="flex grow items-center justify-center">
+                <h1 className="text-5xl font-mono font-black">Profile</h1>
+            </div>
+        </div>
     )
 }
