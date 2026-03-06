@@ -22,8 +22,8 @@ auth patterns.
 
 ## Test Credentials
 
-| Email | Role |
-|---|---|
+| Email | Role | Password |
+|---|---|---|
 | harry@mail.co.uk | Admin | password123 |
 | tom@mail.co.uk | Manager | password456 |
 | dick@mail.co.uk | Viewer | password789 |
