@@ -24,6 +24,6 @@ auth patterns before migrating HOPS CRM from Power Apps to a full-stack React ap
 
 | Email | Role |
 |---|---|
-| harry@mail.co.uk | Admin |
-| tom@mail.co.uk | Manager |
-| dick@mail.co.uk | Viewer |
+| harry@mail.co.uk | Admin | password123 |
+| tom@mail.co.uk | Manager | password456 |
+| dick@mail.co.uk | Viewer | password789 |
